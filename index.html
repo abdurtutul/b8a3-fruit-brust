@@ -25,45 +25,66 @@
 </head>
 <body class="font-lato">
     <header class="md: container md:mx-auto">
-        <nav>
-            <div class="navbar bg-[#F85559] rounded-[600px] lg:w-[1440px] lg:h-[120px] mt-12">
-                <div class="text-white text-[18px] flex-1">
-                    <ul class="flex gap-[30px] py-[39px] pl-[50px]">
-                        <li><a>Home</a></li>
-                        <li>About Us</li>
-                        <li>Shop</li>
-                        <li>All Fruits</li>
-                    </ul>
-
+      <!-- nav section -->
+      <nav class="lg:mt-[50px]">
+        <div class="navbar lg:bg-[#F85559] lg:text-white rounded-[600px] py-[39px] pl-[60px] lg:w-[1440px] lg:h-[120px]">
+          <div class="navbar-start w-0 lg:w-[50%]">
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-[18px]">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:flex-auto flex-1">
+            <div class="hidden lg:block ">
+              <div class="flex items-center gap-4">
+                <img src="images/logo.png" alt="" />
+                <div>
+                  <h1 class="text-white font-bold lg:text-[40px]">FruitBurst</h1>
                 </div>
-                <!-- logo -->
-                <div class="lg:justify-center lg:flex-1  flex pr-[50px]">
-                    <div class="flex items-center gap-4">
-                      <img src="images/logo.png" alt="" />
-                      <div>
-                        <h1 class="text-white font-bold lg:text-[40px]">Fruit Burst</h1>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- search box -->
-                  <div class="lg:justify-end hidden lg:flex pr-[50px]">
-                    <div
-                      class="relative lg:w-[400px] lg:h-[55px] bg-white rounded-[50px]"
-                    >
-                      <input
-                        type="text"
-                        class="lg:w-full lg:h-full rounded-[50px] outline-none pl-[20px]"
-                        placeholder="Search here"
-                      />
-                      <i
-                        class="fa-solid fa-magnifying-glass absolute right-10 bottom-4"
-                      ></i>
-                    </div>
-                  </div>
               </div>
-
-            
-        </nav>
+            </div>
+          
+            <div class="block lg:hidden">
+              <div class="flex items-center gap-4">
+                <img src="images/logo.png" alt="" />
+                <div>
+                  <h1 class="text-white font-bold lg:text-[40px]">FruitBurst</h1>
+                </div>
+              </div>
+          </div>
+          </div>
+          <div class="navbar-end text-black border-none">
+            <div class="hidden lg:flex">
+              <input
+                class="input rounded-[600px] w-[400px] h-[56px] mr-[50px]"
+                placeholder="Search here"/>
+                <div class="absolute  right-[370px] top-[100px] ">
+                  <i class="fa-solid fa-magnifying-glass "></i>
+              </div>
+            </div>
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content right-[10px] mt-[47] z-20 p-0  bg-white  rounded-box  w-[100px] shadow-xl">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- nav section end  -->
 
 
     </header>
