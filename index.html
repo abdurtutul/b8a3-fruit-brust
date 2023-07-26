@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1973eb634d.js" crossorigin="anonymous"></script>
     <!-- customs styles -->
     <style>
         .font-lato{
@@ -22,7 +24,47 @@
 
 </head>
 <body class="font-lato">
-    <header>
+    <header class="md: container md:mx-auto">
+        <nav>
+            <div class="navbar bg-[#F85559] rounded-[600px] lg:w-[1440px] lg:h-[120px] mt-12">
+                <div class="text-white text-[18px] flex-1">
+                    <ul class="flex gap-[30px] py-[39px] pl-[50px]">
+                        <li><a>Home</a></li>
+                        <li>About Us</li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </ul>
+
+                </div>
+                <!-- logo -->
+                <div class="lg:justify-center lg:flex-1  flex pr-[50px]">
+                    <div class="flex items-center gap-4">
+                      <img src="images/logo.png" alt="" />
+                      <div>
+                        <h1 class="text-white font-bold lg:text-[40px]">Fruit Burst</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- search box -->
+                  <div class="lg:justify-end hidden lg:flex pr-[50px]">
+                    <div
+                      class="relative lg:w-[400px] lg:h-[55px] bg-white rounded-[50px]"
+                    >
+                      <input
+                        type="text"
+                        class="lg:w-full lg:h-full rounded-[50px] outline-none pl-[20px]"
+                        placeholder="Search here"
+                      />
+                      <i
+                        class="fa-solid fa-magnifying-glass absolute right-10 bottom-4"
+                      ></i>
+                    </div>
+                  </div>
+              </div>
+
+            
+        </nav>
+
 
     </header>
     <main>
@@ -30,7 +72,7 @@
     </main>
 
     <footer>
-        
+
     </footer>
     
 </body>
